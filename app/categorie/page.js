@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { categorie } from '../..database/categorie';
+import { categorie } from '../database/shoe';
 
 export const metadata = {
   title: 'categorie page',
@@ -14,7 +14,7 @@ export default function CategoriePage() {
       {categorie.map((shoe) => {
         return (
           <div key={`shoe-div-${shoe.id}`}>
-            <Link href={`/categorie/${shoe.name}`}>{shoe.name}</Link>
+            <Link href={`/categorie/${shoe.id}`}>{shoe.name}</Link>
             <br />
             <Image src={`/images/${shoe.name}.webp`} width={150} height={150} />
           </div>

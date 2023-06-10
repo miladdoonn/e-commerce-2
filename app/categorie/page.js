@@ -13,10 +13,12 @@ export default function CategoriePage() {
       My new shoe Collections
       {categorie.map((shoe) => {
         return (
-          <div key={`shoe-div-${shoe.id}`}>
+          <div className="shoe" key={`shoe-div-${shoe.id}`}>
+            <br />
+
             <Link href={`/categorie/${shoe.id}`}>{shoe.name}</Link>
             <br />
-            <Image src={`/images/${shoe.name}.webp`} width={150} height={150} />
+            <Image src={`/images/${shoe.name}.jpg`} width={150} height={150} />
           </div>
         );
       })}

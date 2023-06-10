@@ -1,17 +1,10 @@
 import './globals.scss';
-import Head from 'next/head';
 import Image from 'next/image';
 
-function HomePage() {
+export default function HomePage() {
   return (
-    <div>
-      <Head>
-        <title>My Milad</title>
-        <meta property="og:title" content="My Milad" key="title" />
-      </Head>
-      <Head>
-        <meta property="og:title" content="My Milad" key="title" />
-      </Head>
+    <main>
+      <br />
       <h1 className="h1">COZYSHOP</h1>
       <Image
         className="div"
@@ -20,8 +13,6 @@ function HomePage() {
         height={350}
       />
       <h3 className="h3">Inspired by Milad</h3>
-    </div>
+    </main>
   );
 }
-
-export default HomePage;

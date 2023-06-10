@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
             home
           </Link>{' '}
           <Link className="link2" href="/categorie">
-            categorie
+            products
           </Link>
           <Link className="link3" href="/about">
             about
@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
           <Link className="link4" href="/contact">
             contact
           </Link>
+          <Link href="/cart">cart</Link>
         </nav>
 
         {children}

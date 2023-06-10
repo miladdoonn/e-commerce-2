@@ -19,6 +19,7 @@
     border-radius: 40px;
     border: none;
     cursor: pointer;
+    gap: 1rem;
 
     font-size: 20px;
     font-weight: 700s;
@@ -30,27 +31,16 @@
     margin: auto;
   }
 
-  .link1 {
+  a {
     color: black;
     background-color: white;
-  }
-  .link2 {
-    color: black;
-    background-color: white;
-  }
-  .link3 {
-    color: black;
-    background-color: white;
-  }
-  .link4 {
-    color: black;
-    background-color: white;
+    background-image: none;
   }
 }
 
 .div {
   position: absolute;
-  top: 32%;
+  top: 25%;
   left: 25%;
   text-align: center;
   box-sizing: border-box;
@@ -68,4 +58,8 @@
   text-align: center;
   bottom: 20%;
   top: 80%;
+}
+
+.shoe {
+  margin-left: 80px;
 }
